@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:text="最大表攻增加量"
+            android:text="攻擊力增加量"
             android:gravity="center"
             android:textSize="28sp"
             android:textStyle="bold"

@@ -15,9 +15,9 @@ public class zzz extends AppCompatActivity {
         setTitle("B");
         setContentView(R.layout.activity_zzz);
 
-        Button btn_to_A = (Button) findViewById(R.id.btn_to_A);
+        Button A = (Button) findViewById(R.id.changeB);
 
-        btn_to_A.setOnClickListener(new View.OnClickListener() {
+        A.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();

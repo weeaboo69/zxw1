@@ -23,10 +23,12 @@
             />
 
         <EditText
+            android:id="@+id/InLevel"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_toRightOf="@id/Level" />
+            android:layout_toRightOf="@id/Level"
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,13 +44,17 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
-        <EditText
+
+        <Spinner
+            android:id="@+id/InClass"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Class"
-            />
+            android:entries="@array/spinnerValue" />
+
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -63,12 +69,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/InAtt"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Att"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -84,12 +92,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/InDMG"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/DMG"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -105,12 +115,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/InFDMG"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/FDMG"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -126,12 +138,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/InBDMG"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/BDMG"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -147,12 +161,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/InCDMG"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/CDMG"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -168,12 +184,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/InBrake"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Brake"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -189,12 +207,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/InAD"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/AD"
-        />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -212,10 +232,12 @@
             />
 
         <EditText
+            android:id="@+id/InMain"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_toRightOf="@id/Main" />
+            android:layout_toRightOf="@id/Main"
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -233,10 +255,12 @@
             />
 
         <EditText
+            android:id="@+id/InSecond"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_toRightOf="@id/Second" />
+            android:layout_toRightOf="@id/Second"
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -253,11 +277,13 @@
             android:textStyle="bold"
             />
 
-        <EditText
+        <Spinner
+            android:id="@+id/InTarget"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_toRightOf="@id/Target" />
+            android:layout_toRightOf="@id/Target"
+            android:entries="@array/spinnerValue" />
     </RelativeLayout>
     <RelativeLayout
             android:layout_width="match_parent"

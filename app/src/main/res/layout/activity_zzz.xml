@@ -21,12 +21,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/AddAD"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Att2"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,12 +44,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/AddDMG"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/DMG2"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -63,12 +67,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/AddFDMG"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/FDMG2"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -84,12 +90,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/AddBDMG"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/BDMG2"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -105,12 +113,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/AddCDMG"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/CDMG2"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -126,12 +136,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/AddBrake"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Brake2"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -147,12 +159,14 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/AddADP"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/AD2"
-            />
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -170,10 +184,12 @@
             />
 
         <EditText
+            android:id="@+id/AddMain"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_toRightOf="@id/Main2" />
+            android:layout_toRightOf="@id/Main2"
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -189,23 +205,26 @@
             android:textSize="28sp"
             android:textStyle="bold"
             />
+
         <EditText
+            android:id="@+id/AddSecond"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:layout_toRightOf="@id/Second2" />
+            android:layout_toRightOf="@id/Second2"
+            android:inputType="number" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10">
+
         <Button
-            android:id="@+id/startFinal"
+            android:id="@+id/StartFinal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="開始計算"
-            />
+            android:text="開始計算" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -221,15 +240,15 @@
         android:textSize="28sp"
         android:textStyle="bold"
         />
+
         <TextView
+            android:id="@+id/AddAnswer"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="   zzz%"
             android:layout_toRightOf="@+id/answer"
             android:gravity="center"
             android:textSize="28sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
     </RelativeLayout>
 
 
@@ -239,12 +258,12 @@
         android:layout_weight="10"
         android:background="#0f0"
         >
+
         <Button
             android:id="@+id/changeB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="回上一頁"
-            />
+            android:text="回上一頁" />
     </RelativeLayout>
 </LinearLayout>

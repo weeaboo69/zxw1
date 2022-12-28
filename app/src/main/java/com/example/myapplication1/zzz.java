@@ -2,21 +2,17 @@ package com.example.myapplication1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.res.Resources;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 public class zzz extends AppCompatActivity {
-    private String zzzClass;
-    private String zzzTarget;
+    private String zzzClass = (MainActivity.MainClass);
+    private String zzzTarget = (MainActivity.MainTarget);
     private EditText ADP;
     private EditText AD;
     private EditText DMG;
@@ -28,35 +24,34 @@ public class zzz extends AppCompatActivity {
     private EditText Main;
     private TextView Answer;
 
-    private int OGLevel = MainActivity.MainLevel;
     private int OGAtt = MainActivity.MainAtt;
-    private float OGDMG = (MainActivity.MainDMG)/100;
-    private float OGFDMG = (MainActivity.MainFDMG)/100;
-    private float OGBDMG = (MainActivity.MainBDMG)/100;
-    private float OGCDMG = (MainActivity.MainCDMG)/100;
-    private float OGBrake = (MainActivity.MainBrake)/100;
-    private float OGAD = (MainActivity.MainAD)/100;
+    private double OGDMG = (MainActivity.MainDMG)/100;
+    private double OGFDMG = (MainActivity.MainFDMG)/100;
+    private double OGBDMG = (MainActivity.MainBDMG)/100;
+    private double OGCDMG = (MainActivity.MainCDMG)/100;
+    private double OGBrake = (MainActivity.MainBrake)/100;
+    private double OGAD = (MainActivity.MainAD)/100;
     private int OGMain = MainActivity.MainMain;
     private int OGSecond = MainActivity.MainSecond;
     private double OGRAD;
 
-    private float zzzADP ;
-    private float zzzAD ;
-    private float zzzDMG ;
-    private float zzzFDMG ;
-    private float zzzBDMG;
-    private float zzzCDMG;
-    private float zzzBrake;
+    private double zzzADP ;
+    private double zzzAD ;
+    private double zzzDMG ;
+    private double zzzFDMG ;
+    private double zzzBDMG;
+    private double zzzCDMG;
+    private double zzzBrake;
     private int zzzMain;
     private int zzzSecond;
 
-    private float newADP = ((MainActivity.MainAD)+zzzADP)/100;
+    private double newADP = ((MainActivity.MainAD)+zzzADP)/100;
     private double newAD = OGRAD+zzzAD;
-    private float newDMG = ((MainActivity.MainDMG)+zzzDMG)/100;
-    private float newFDMG = ((MainActivity.MainFDMG)+zzzFDMG)/100;
-    private float newBDMG = ((MainActivity.MainBDMG)+zzzBDMG)/100;
-    private float newCDMG = ((MainActivity.MainCDMG)+zzzCDMG)/100;
-    private float newBrake = ((MainActivity.MainBrake)+zzzBrake)/100;
+    private double newDMG = ((MainActivity.MainDMG)+zzzDMG)/100;
+    private double newFDMG = ((MainActivity.MainFDMG)+zzzFDMG)/100;
+    private double newBDMG = ((MainActivity.MainBDMG)+zzzBDMG)/100;
+    private double newCDMG = ((MainActivity.MainCDMG)+zzzCDMG)/100;
+    private double newBrake = ((MainActivity.MainBrake)+zzzBrake)/100;
     private int newMain = (MainActivity.MainMain)+zzzMain;
     private int newSecond = (MainActivity.MainSecond)+zzzSecond;
 
@@ -70,17 +65,7 @@ public class zzz extends AppCompatActivity {
         setTitle("B");
         setContentView(R.layout.activity_zzz);
 
-        switch (zzzClass)//填職業
-        {
-            case "箭神" : weapon = 1.3; break;
-            case "神射手" : weapon = 1.35; break;
-        }
 
-        switch (zzzTarget)//填目標
-        {
-            case "巴洛古" : defense = 25;break;
-            case "炎魔(簡單)" : defense = 30;break;
-        }
 
         Button B = (Button) findViewById(R.id.StartFinal);
 
@@ -88,6 +73,17 @@ public class zzz extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
+                switch (zzzClass)//填職業
+                {
+                    case "箭神" : weapon = 1.3; break;
+                    case "神射手" : weapon = 1.35; break;
+                }
+
+                switch (zzzTarget)//填目標
+                {
+                    case "巴洛古" : defense = 25;break;
+                    case "炎魔(簡單)" : defense = 30;break;
+                }
                 Answer = (TextView) findViewById(R.id.Final);
                 ADP = (EditText) findViewById(R.id.AddADP);
                 AD = (EditText) findViewById(R.id.AddAD);
@@ -112,7 +108,7 @@ public class zzz extends AppCompatActivity {
                 OGRAD = (OGAtt/(4*OGMain+OGSecond)*(1+OGAD)*(1+OGDMG)*(1+OGFDMG)*0.01*(weapon));
                 zxw1 = ((4*OGMain+OGSecond)*(OGRAD*(1+OGAD))*(1+OGDMG+OGBDMG)*(1+OGFDMG)*0.01*(weapon)*(1+OGCDMG))*(1-((defense)*(1-OGBrake))/100);
                 zxw2 = ((4*newMain+newSecond)*(newAD*(1+newADP))*(1+newDMG+newBDMG)*(1+newFDMG)*0.01*(weapon)*(1+newCDMG))*(1-((defense)*(1-newBrake))/100);
-                zzz = zxw2/zxw1;
+                zzz = ((zxw2-zxw1)/zxw1)*100;
                 Answer.setText(Double.toString(zzz));
             }
         });

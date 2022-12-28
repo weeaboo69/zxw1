@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
     public static String MainTarget;
     public static int MainLevel;
     public static int MainAtt;
-    public static int MainDMG;
-    public static int MainFDMG;
-    public static int MainBDMG;
-    public static int MainCDMG;
-    public static int MainBrake;
-    public static int MainAD;
+    public static double MainDMG;
+    public static double MainFDMG;
+    public static double MainBDMG;
+    public static double MainCDMG;
+    public static double MainBrake;
+    public static double MainAD;
     public static int MainMain;
     public static int MainSecond;
 

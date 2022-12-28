@@ -28,7 +28,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Level"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -76,7 +79,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Att"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -99,7 +105,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/DMG"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -132,7 +141,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/FDMG"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -165,7 +177,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/BDMG"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -198,7 +213,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/CDMG"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -231,7 +249,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Brake"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -264,7 +285,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/AD"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -297,7 +321,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Main"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -320,7 +347,10 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Second"
-            android:inputType="number" />
+            android:hint="0"
+            android:inputType="number"
+            android:text="0"
+            tools:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -343,7 +373,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Target"
-            android:entries="@array/spinnerValue" />
+            android:entries="@array/spinnerValue2" />
     </RelativeLayout>
     <RelativeLayout
             android:layout_width="match_parent"

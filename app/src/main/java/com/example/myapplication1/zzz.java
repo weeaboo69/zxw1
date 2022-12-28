@@ -103,6 +103,8 @@ public class zzz extends AppCompatActivity {
                     case "炎魔(簡單)" : defense = 30;break;
                 }
 
+                OGRAD = OGAtt/((4*OGMain+OGSecond)*(1+OGAD)*(1+OGDMG)*(1+OGFDMG)*(0.01)*(weapon));
+
                 newADP = ((MainActivity.MainAD)+zzzADP)/100;
                 newAD = OGRAD+zzzAD;
                 newDMG = ((MainActivity.MainDMG)+zzzDMG)/100;
@@ -113,8 +115,6 @@ public class zzz extends AppCompatActivity {
                 newMain = (MainActivity.MainMain)+zzzMain;
                 newSecond = (MainActivity.MainSecond)+zzzSecond;
 
-                //填算式 zxw2/zxw1
-                OGRAD = OGAtt/((4*OGMain+OGSecond)*(1+OGAD)*(1+OGDMG)*(1+OGFDMG)*(0.01)*(weapon));
                 zxw1 = (((4*OGMain+OGSecond)*(OGRAD*(1+OGAD))*(1+OGDMG+OGBDMG)*(1+OGFDMG)*(0.01)*(weapon))*(1+OGCDMG))*((1-(defense/100))*(1-OGBrake));
                 zxw2 = (((4*newMain+newSecond)*(newAD*(1+newADP))*(1+newDMG+newBDMG)*(1+newFDMG)*(0.01)*(weapon))*(1+newCDMG))*((1-(defense/100))*(1-newBrake));
                 zzz = ((zxw2-zxw1)/zxw1)*100;

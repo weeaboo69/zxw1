@@ -30,8 +30,7 @@
             android:layout_toRightOf="@id/Att2"
             android:hint="0"
             android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -55,9 +54,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/DMG2"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,9 +89,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/FDMG2"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -127,9 +124,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/BDMG2"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -163,9 +159,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/CDMG2"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -199,9 +194,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Brake2"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -235,9 +229,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/AD2"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -272,8 +265,7 @@
             android:layout_toRightOf="@id/Main2"
             android:hint="0"
             android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -298,8 +290,7 @@
             android:layout_toRightOf="@id/Second2"
             android:hint="0"
             android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"

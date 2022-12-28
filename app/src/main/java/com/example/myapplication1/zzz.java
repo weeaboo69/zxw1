@@ -45,15 +45,15 @@ public class zzz extends AppCompatActivity {
     private int zzzMain;
     private int zzzSecond;
 
-    private double newADP = ((MainActivity.MainAD)+zzzADP)/100;
-    private double newAD = OGRAD+zzzAD;
-    private double newDMG = ((MainActivity.MainDMG)+zzzDMG)/100;
-    private double newFDMG = ((MainActivity.MainFDMG)+zzzFDMG)/100;
-    private double newBDMG = ((MainActivity.MainBDMG)+zzzBDMG)/100;
-    private double newCDMG = ((MainActivity.MainCDMG)+zzzCDMG)/100;
-    private double newBrake = ((MainActivity.MainBrake)+zzzBrake)/100;
-    private int newMain = (MainActivity.MainMain)+zzzMain;
-    private int newSecond = (MainActivity.MainSecond)+zzzSecond;
+    private double newADP;
+    private double newAD;
+    private double newDMG;
+    private double newFDMG;
+    private double newBDMG;
+    private double newCDMG;
+    private double newBrake;
+    private int newMain;
+    private int newSecond;
 
     private double weapon;
     private int defense;
@@ -65,14 +65,32 @@ public class zzz extends AppCompatActivity {
         setTitle("B");
         setContentView(R.layout.activity_zzz);
 
-
-
         Button B = (Button) findViewById(R.id.StartFinal);
 
         B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
+                Answer = (TextView) findViewById(R.id.Final);
+                ADP = (EditText) findViewById(R.id.AddADP);
+                AD = (EditText) findViewById(R.id.AddAD);
+                DMG = (EditText) findViewById(R.id.AddDMG);
+                FDMG = (EditText) findViewById(R.id.AddFDMG);
+                BDMG = (EditText) findViewById(R.id.AddBDMG);
+                CDMG = (EditText) findViewById(R.id.AddCDMG);
+                Brake = (EditText) findViewById(R.id.AddBrake);
+                Main = (EditText) findViewById(R.id.AddMain);
+                Second = (EditText) findViewById(R.id.AddSecond);
+
+                zzzADP =Double.parseDouble(ADP.getText().toString());
+                zzzAD =Integer.parseInt(AD.getText().toString());
+                zzzDMG =Double.parseDouble(DMG.getText().toString());
+                zzzFDMG =Double.parseDouble(FDMG.getText().toString());
+                zzzBDMG =Double.parseDouble(BDMG.getText().toString());
+                zzzCDMG =Double.parseDouble(CDMG.getText().toString());
+                zzzBrake =Double.parseDouble(Brake.getText().toString());
+                zzzMain =Integer.parseInt(Main.getText().toString());
+                zzzSecond =Integer.parseInt(Second.getText().toString());
                 switch (zzzClass)//填職業
                 {
                     case "箭神" : weapon = 1.3; break;
@@ -84,30 +102,21 @@ public class zzz extends AppCompatActivity {
                     case "巴洛古" : defense = 25;break;
                     case "炎魔(簡單)" : defense = 30;break;
                 }
-                Answer = (TextView) findViewById(R.id.Final);
-                ADP = (EditText) findViewById(R.id.AddADP);
-                AD = (EditText) findViewById(R.id.AddAD);
-                DMG = (EditText) findViewById(R.id.AddDMG);
-                FDMG = (EditText) findViewById(R.id.AddFDMG);
-                BDMG = (EditText) findViewById(R.id.AddBDMG);
-                CDMG = (EditText) findViewById(R.id.AddCDMG);
-                Brake = (EditText) findViewById(R.id.AddBrake);
-                Main = (EditText) findViewById(R.id.AddMain);
-                Second = (EditText) findViewById(R.id.AddSecond);
-                zzzADP =Float.parseFloat(ADP.getText().toString());
-                zzzAD =Integer.parseInt(AD.getText().toString());
-                zzzDMG =Float.parseFloat(DMG.getText().toString());
-                zzzFDMG =Float.parseFloat(FDMG.getText().toString());
-                zzzBDMG =Float.parseFloat(BDMG.getText().toString());
-                zzzCDMG =Float.parseFloat(CDMG.getText().toString());
-                zzzBrake =Float.parseFloat(Brake.getText().toString());
-                zzzMain =Integer.parseInt(Main.getText().toString());
-                zzzSecond =Integer.parseInt(Second.getText().toString());
+
+                newADP = ((MainActivity.MainAD)+zzzADP)/100;
+                newAD = OGRAD+zzzAD;
+                newDMG = ((MainActivity.MainDMG)+zzzDMG)/100;
+                newFDMG = ((MainActivity.MainFDMG)+zzzFDMG)/100;
+                newBDMG = ((MainActivity.MainBDMG)+zzzBDMG)/100;
+                newCDMG = ((MainActivity.MainCDMG)+zzzCDMG)/100;
+                newBrake = ((MainActivity.MainBrake)+zzzBrake)/100;
+                newMain = (MainActivity.MainMain)+zzzMain;
+                newSecond = (MainActivity.MainSecond)+zzzSecond;
 
                 //填算式 zxw2/zxw1
-                OGRAD = (OGAtt/(4*OGMain+OGSecond)*(1+OGAD)*(1+OGDMG)*(1+OGFDMG)*0.01*(weapon));
-                zxw1 = ((4*OGMain+OGSecond)*(OGRAD*(1+OGAD))*(1+OGDMG+OGBDMG)*(1+OGFDMG)*0.01*(weapon)*(1+OGCDMG))*(1-((defense)*(1-OGBrake))/100);
-                zxw2 = ((4*newMain+newSecond)*(newAD*(1+newADP))*(1+newDMG+newBDMG)*(1+newFDMG)*0.01*(weapon)*(1+newCDMG))*(1-((defense)*(1-newBrake))/100);
+                OGRAD = OGAtt/((4*OGMain+OGSecond)*(1+OGAD)*(1+OGDMG)*(1+OGFDMG)*(0.01)*(weapon));
+                zxw1 = (((4*OGMain+OGSecond)*(OGRAD*(1+OGAD))*(1+OGDMG+OGBDMG)*(1+OGFDMG)*(0.01)*(weapon))*(1+OGCDMG))*((1-(defense/100))*(1-OGBrake));
+                zxw2 = (((4*newMain+newSecond)*(newAD*(1+newADP))*(1+newDMG+newBDMG)*(1+newFDMG)*(0.01)*(weapon))*(1+newCDMG))*((1-(defense/100))*(1-newBrake));
                 zzz = ((zxw2-zxw1)/zxw1)*100;
                 Answer.setText(Double.toString(zzz));
             }

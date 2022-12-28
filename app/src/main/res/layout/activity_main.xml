@@ -30,8 +30,7 @@
             android:layout_toRightOf="@id/Level"
             android:hint="0"
             android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -81,8 +80,7 @@
             android:layout_toRightOf="@id/Att"
             android:hint="0"
             android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -106,9 +104,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/DMG"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -142,9 +139,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/FDMG"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -178,9 +174,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/BDMG"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -214,9 +209,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/CDMG"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -250,9 +244,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/Brake"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -286,9 +279,8 @@
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/AD"
             android:hint="0"
-            android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:inputType="number|numberDecimal"
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -323,8 +315,7 @@
             android:layout_toRightOf="@id/Main"
             android:hint="0"
             android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -349,8 +340,7 @@
             android:layout_toRightOf="@id/Second"
             android:hint="0"
             android:inputType="number"
-            android:text="0"
-            tools:text="0" />
+            android:text="0" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -389,5 +379,5 @@
             android:layout_centerInParent="true"
             android:text="輸入完成" />
 
-        </RelativeLayout>
+    </RelativeLayout>
 </LinearLayout>

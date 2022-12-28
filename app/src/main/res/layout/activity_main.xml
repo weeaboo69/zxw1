@@ -351,13 +351,13 @@
             android:layout_weight="10"
             android:background="#0f0"
             >
-            <Button
-                android:id="@+id/change"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="輸入完成"
-                />
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="輸入完成" />
 
         </RelativeLayout>
 </LinearLayout>

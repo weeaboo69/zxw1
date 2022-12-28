@@ -52,33 +52,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Level = (EditText) findViewById(R.id.InLevel);
-        Att = (EditText) findViewById(R.id.InAtt);
-        DMG = (EditText) findViewById(R.id.InDMG);
-        BDMG = (EditText) findViewById(R.id.InBDMG);
-        FDMG = (EditText) findViewById(R.id.InFDMG);
-        CDMG = (EditText) findViewById(R.id.InCDMG);
-        AD = (EditText) findViewById(R.id.InAD);
-        Brake = (EditText) findViewById(R.id.InBrake);
-        Main = (EditText) findViewById(R.id.InMain);
-        Second = (EditText) findViewById(R.id.InSecond);
-        MainLevel =Integer.parseInt(Level.getText().toString());
-        MainAtt =Integer.parseInt(Att.getText().toString());
-        MainAD =Integer.parseInt(AD.getText().toString());
-        MainDMG =Integer.parseInt(DMG.getText().toString());
-        MainBDMG =Integer.parseInt(BDMG.getText().toString());
-        MainCDMG =Integer.parseInt(CDMG.getText().toString());
-        MainFDMG =Integer.parseInt(FDMG.getText().toString());
-        MainBrake =Integer.parseInt(Brake.getText().toString());
-        MainMain =Integer.parseInt(Main.getText().toString());
-        MainSecond =Integer.parseInt(Second.getText().toString());
-
         Button B = (Button) findViewById(R.id.change);
 
         B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
+                Level = (EditText) findViewById(R.id.InLevel);
+                Att = (EditText) findViewById(R.id.InAtt);
+                DMG = (EditText) findViewById(R.id.InDMG);
+                BDMG = (EditText) findViewById(R.id.InBDMG);
+                FDMG = (EditText) findViewById(R.id.InFDMG);
+                CDMG = (EditText) findViewById(R.id.InCDMG);
+                AD = (EditText) findViewById(R.id.InAD);
+                Brake = (EditText) findViewById(R.id.InBrake);
+                Main = (EditText) findViewById(R.id.InMain);
+                Second = (EditText) findViewById(R.id.InSecond);
+                MainLevel =Integer.parseInt(Level.getText().toString());
+                MainAtt =Integer.parseInt(Att.getText().toString());
+                MainAD =Integer.parseInt(AD.getText().toString());
+                MainDMG =Integer.parseInt(DMG.getText().toString());
+                MainBDMG =Integer.parseInt(BDMG.getText().toString());
+                MainCDMG =Integer.parseInt(CDMG.getText().toString());
+                MainFDMG =Integer.parseInt(FDMG.getText().toString());
+                MainBrake =Integer.parseInt(Brake.getText().toString());
+                MainMain =Integer.parseInt(Main.getText().toString());
+                MainSecond =Integer.parseInt(Second.getText().toString());
                 intent.setClass(MainActivity.this, zzz.class);
                 startActivity(intent);
             }

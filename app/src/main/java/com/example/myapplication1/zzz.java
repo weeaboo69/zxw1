@@ -36,6 +36,8 @@ public class zzz extends AppCompatActivity {
     private int zzzBrake;
     private int zzzMain;
     private int zzzSecond;
+    private int weapon;
+    private float defense;
     private int zzz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,31 +45,44 @@ public class zzz extends AppCompatActivity {
         setTitle("B");
         setContentView(R.layout.activity_zzz);
 
-        Answer = (TextView) findViewById(R.id.AddAnswer);
-        ADP = (EditText) findViewById(R.id.AddADP);
-        AD = (EditText) findViewById(R.id.AddAD);
-        DMG = (EditText) findViewById(R.id.AddDMG);
-        FDMG = (EditText) findViewById(R.id.AddFDMG);
-        BDMG = (EditText) findViewById(R.id.AddBDMG);
-        CDMG = (EditText) findViewById(R.id.AddCDMG);
-        Brake = (EditText) findViewById(R.id.AddBrake);
-        Main = (EditText) findViewById(R.id.AddMain);
-        Second = (EditText) findViewById(R.id.AddSecond);
-        zzzADP =Integer.parseInt(ADP.getText().toString());
-        zzzAD =Integer.parseInt(AD.getText().toString());
-        zzzDMG =Integer.parseInt(DMG.getText().toString());
-        zzzFDMG =Integer.parseInt(FDMG.getText().toString());
-        zzzBDMG =Integer.parseInt(BDMG.getText().toString());
-        zzzCDMG =Integer.parseInt(CDMG.getText().toString());
-        zzzBrake =Integer.parseInt(Brake.getText().toString());
-        zzzMain =Integer.parseInt(Main.getText().toString());
-        zzzSecond =Integer.parseInt(Second.getText().toString());
+        switch (zzzClass)//填職業
+        {
+            case "a" : weapon = 1;
+        }
+
+        switch (zzzTarget)//填目標
+        {
+            case "1" : defense = 1;
+        }
 
         Button B = (Button) findViewById(R.id.StartFinal);
 
         B.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
+                Answer = (TextView) findViewById(R.id.Final);
+                ADP = (EditText) findViewById(R.id.AddADP);
+                AD = (EditText) findViewById(R.id.AddAD);
+                DMG = (EditText) findViewById(R.id.AddDMG);
+                FDMG = (EditText) findViewById(R.id.AddFDMG);
+                BDMG = (EditText) findViewById(R.id.AddBDMG);
+                CDMG = (EditText) findViewById(R.id.AddCDMG);
+                Brake = (EditText) findViewById(R.id.AddBrake);
+                Main = (EditText) findViewById(R.id.AddMain);
+                Second = (EditText) findViewById(R.id.AddSecond);
+                zzzADP =Integer.parseInt(ADP.getText().toString());
+                zzzAD =Integer.parseInt(AD.getText().toString());
+                zzzDMG =Integer.parseInt(DMG.getText().toString());
+                zzzFDMG =Integer.parseInt(FDMG.getText().toString());
+                zzzBDMG =Integer.parseInt(BDMG.getText().toString());
+                zzzCDMG =Integer.parseInt(CDMG.getText().toString());
+                zzzBrake =Integer.parseInt(Brake.getText().toString());
+                zzzMain =Integer.parseInt(Main.getText().toString());
+                zzzSecond =Integer.parseInt(Second.getText().toString());
+
+                //填算式
+
                 Answer.setText(zzz);
             }
         });
